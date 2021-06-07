@@ -20,8 +20,8 @@
 #//////////////////////////////////////////////////////////////
 
 TAG_VERSION=latest
-DOCKER_IMAGE=bensuperpc/<<IMAGE_NAME>>
-COMPILER_EXEC=<<IMAGE_NAME>>
+DOCKER_IMAGE=bensuperpc/brainfuck
+COMPILER_EXEC=brainfuck
 
 case "$1" in
     -version|-v)
@@ -30,7 +30,7 @@ case "$1" in
         shift
         ;;&
     -h)
-        echo "Usage: ${0##*/} [-version latest $COMPILER_EXEC -o hello hello.c]"
+        echo "Usage: ${0##*/} [-version latest $COMPILER_EXEC hello.bf]"
         exit 1
         ;;
 esac
